@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "Studied Computer Science together at university. We used to build small web projects and attend hackathons.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["college", "study partner"],
+    "bio": "We prepared for exams together during college. She is very disciplined and loves reading novels.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Works in the same office. We often collaborate on frontend tasks and discuss React best practices.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Farhana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/60.jpg",
+    "email": "farhana.akter@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["family friend"],
+    "bio": "Family friend since childhood. We meet during festivals and share updates about our careers.",
+    "goal": 15,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "name": "Siam Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/77.jpg",
+    "email": "siam.ahmed@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "We go to the gym together. He motivates me to stay consistent and maintain a healthy routine.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Mim Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "mim.chowdhury@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["school", "best friend"],
+    "bio": "Best friend from school days. We still chat regularly and share personal updates.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 7,
+    "name": "Rakibul Islam",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "rakibul.islam@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["freelance", "client"],
+    "bio": "Worked together on several freelance web development projects. Keeps in touch for new opportunities.",
+    "goal": 12,
+    "next_due_date": "2026-04-06"
+  },
+  {
+    "id": 8,
+    "name": "Sharmin Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "sharmin.sultana@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor", "friend"],
+    "bio": "Neighbor and good friend. We often meet in the evenings and talk about daily life.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
+  }
+]

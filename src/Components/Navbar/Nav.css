@@ -1,0 +1,30 @@
+
+
+
+a.active {
+                
+    color: white;
+    background-color:#244d3f;
+    padding-bottom: 4px;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color:black;             /* gray text */
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* optional: active hover enhancement */
