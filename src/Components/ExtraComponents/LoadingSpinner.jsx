@@ -3,7 +3,7 @@ import { PacmanLoader } from 'react-spinners';
 
 const LoadingSpinner = () => {
     return (
-        <div className='container mx-auto flex justify-center items-center py-28'>
+        <div className='container min-h-[70vh] mx-auto flex justify-center items-center '>
           <PacmanLoader color='#244d3f'></PacmanLoader>  
         </div>
     );

@@ -1,15 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 const Friend = ({friend}) => {
-    console.log(friend);
+  const navigate = useNavigate();
+  
+  
     const {name,
         picture,
         days_since_contact,
         tags,
-status
+status,
+id
     }=friend
+    const details=(id)=>{
+    navigate(`/details/${id}`)
+  }
     return (
-        <div className='bg-white p-5 flex flex-col items-center space-y-1 shadow'>
+        <div onClick={()=>details(id)} className='bg-white p-5 flex flex-col items-center space-y-1 shadow'>
          <img className='w-20 rounded-full' src={picture} alt="" />
          <h4 className='font-bold text-xl'>{name}</h4>
          <p className='text-zinc-500 font-semibold'>{days_since_contact}d ago</p> 
