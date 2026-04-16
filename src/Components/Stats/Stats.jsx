@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
+import { GlobalContext } from '../../ContextApi/ContextApi';
 
 
 // Sample data
-const data = [
-  { name: 'Group A', value: 400, fill: '#0088FE' },
-  { name: 'Group B', value: 300, fill: '#00C49F' },
-  { name: 'Group C', value: 300, fill: '#FFBB28' },
-  { name: 'Group D', value: 200, fill: '#FF8042' },
-];
+
 
 const Stats = () => {
-  return (
+   const {timelineList,
+      setTimelineList,
+     text,
+     setText,
+     call,
+     setCall,
+     video,setVideo}=useContext(GlobalContext)
+ const data = [
+  { name: 'Text', value: text.length, fill: '#0088FE' },
+  { name: 'Call', value:call.length, fill: '#00C49F' },
+  { name: 'video', value:video.length, fill: '#FFBB28' }
+ 
+];
+ 
+ 
+     return (
     <div className=' max-w-5xl mx-auto '>
         <h2 className='font-bold text-3xl mb-4'>Friendship Analytics</h2>
 <div className='bg-white shadow p-4 rounded-md'>

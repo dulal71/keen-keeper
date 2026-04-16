@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link, useParams } from 'react-router';
 import { BiAlarmSnooze } from "react-icons/bi";
@@ -7,19 +7,43 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineTextsms } from "react-icons/md";
 import { FaVideo } from "react-icons/fa6";
+import { GlobalContext } from '../../ContextApi/ContextApi';
+import { toast } from 'react-toastify';
 const Detail = ({friends}) => {
+    const {timelineList,
+    setTimelineList,
+   text,
+   setText,
+   call,
+   setCall,
+   video,setVideo}=useContext(GlobalContext)
     const {id} = useParams()
-    console.log(id);
-    console.log(friends);
-    const filterFriend = friends.find(friend=>friend.id ==id)
-    console.log(filterFriend);
-    const {name,picture,tags,bio,email,status,
+  const filterFriend = friends.find(friend=>friend.id ==id)
+ const {name,picture,tags,bio,email,status,
 goal,next_due_date,days_since_contact
-
-
-
-
 }=filterFriend
+
+const textMessage=(friend)=>{
+    const newText = [...text,friend]
+    setText(newText)
+    toast.success(`Text with ${name} `)
+    setTimelineList([...timelineList,friend])
+
+}
+const callMessage=(friend)=>{
+    const newCall = [...call,friend]
+    setCall(newCall)
+    toast.success(`Call with ${name} `)
+    setTimelineList([...timelineList,friend])
+
+}
+const videoCall=(friend)=>{
+    const newVideo = [...video,friend]
+    setVideo(newVideo)
+    toast.success(`video call with ${name} `)
+    setTimelineList([...timelineList,friend])
+
+}
     return (
       <div className='max-w-6xl  mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-2 md:gap-10 '>
      {/* Profile */}
@@ -108,15 +132,15 @@ goal,next_due_date,days_since_contact
 
     <div className='flex flex-col md:flex-row gap-4'>
       
-      <div className='flex-1 bg-base-200 rounded-xl py-6 flex justify-center gap-2 items-center  cursor-pointer hover:bg-base-300 transition'>
+      <div onClick={()=>callMessage(filterFriend)} className='flex-1 bg-base-200 rounded-xl py-6 flex justify-center gap-2 items-center  cursor-pointer hover:bg-base-300 transition'>
        <IoCall color='red' size={25}/>  <p className='font-medium'>Call</p>
       </div>
 
-      <div className='flex-1 bg-base-200 rounded-xl py-6  flex justify-center gap-2 items-center cursor-pointer hover:bg-base-300 transition'>
+      <div onClick={()=>textMessage(filterFriend)} className='flex-1 bg-base-200 rounded-xl py-6  flex justify-center gap-2 items-center cursor-pointer hover:bg-base-300 transition'>
         <MdOutlineTextsms color='blue' size={25}/> <p className='font-medium'>Text</p>
       </div>
 
-      <div className='flex-1 bg-base-200 rounded-xl py-6 flex justify-center gap-2 items-center cursor-pointer hover:bg-base-300 transition'>
+      <div onClick={()=>videoCall(filterFriend)} className='flex-1 bg-base-200 rounded-xl py-6 flex justify-center gap-2 items-center cursor-pointer hover:bg-base-300 transition'>
         <FaVideo color='orange' size={25}/><p className='font-medium'> Video</p>
       </div>
 
