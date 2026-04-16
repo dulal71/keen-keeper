@@ -13,13 +13,7 @@ const Timeline = () => {
    setCall,
    video,setVideo}=useContext(GlobalContext)
    const data ={
-    timelineList,
-    setTimelineList,
-   text,
-   setText,
-   call,
-   setCall,
-   video,setVideo
+   text,call,video
    }
    console.log(timelineList);
     return (
