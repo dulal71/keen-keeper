@@ -94,5 +94,53 @@
     "bio": "Neighbor and good friend. We often meet in the evenings and talk about daily life.",
     "goal": 10,
     "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 9,
+    "name": "Mahin Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/65.jpg",
+    "email": "mahin.rahman@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["office", "team member"],
+    "bio": "Works with me on frontend projects. Always helpful with React problems.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 10,
+    "name": "Sadia Islam",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["school", "best friend"],
+    "bio": "Best friend from school. We used to prepare for exams together.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+   {
+    "id": 11,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "tanvir.ahmed@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Met at the gym. Keeps motivating me to stay consistent with workouts.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 12,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Neighbor and family friend. Often meet during community events.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
   }
 ]
