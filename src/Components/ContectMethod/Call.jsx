@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoCall } from "react-icons/io5";
-const Call = ({call,d}) => {
+const Call = ({call}) => {
     return (
         <div>
            {
