@@ -1,0 +1,17 @@
+
+.box {
+  animation-name: moveBox;
+  animation-duration:1s;
+  animation-timing-function: linear;
+
+}
+
+
+@keyframes moveBox {
+  0% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
