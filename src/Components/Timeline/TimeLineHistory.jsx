@@ -1,5 +1,5 @@
 import React, {  useState } from 'react';
-
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import AllMethod from '../ContectMethod/AllMethod';
 import Text from '../ContectMethod/Text';
 import Call from '../ContectMethod/Call';
@@ -20,7 +20,7 @@ const TimeLineHistory = ({data}) => {
             <h1 className='font-bold text-3xl md:text-4xl lg:text-5xl bg-linear-to-r from-[#244d3f] via-[#278163] to-[#34ac84] bg-clip-text text-transparent mb-2'>Timeline </h1>
             <div>
              <div className="dropdown dropdown-center ml-5">
-  <div tabIndex={0} role="button" className="btn m-1">Filter timeline </div>
+  <div tabIndex={0} role="button" className="btn m-1">Filter timeline <MdOutlineArrowDropDown /></div>
   <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm ">
     <li onClick={()=>setSort('all')}><a>All</a></li>
     <li onClick={()=>setSort('text')}><a>Text</a></li>

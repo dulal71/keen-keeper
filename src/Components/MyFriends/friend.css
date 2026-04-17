@@ -1,5 +1,7 @@
 
 .box {
+  border-bottom: 2px solid #244d3f;
+  border-left: 2px solid #244d3f;
   animation-name: moveBox;
   animation-duration:1s;
   animation-timing-function: linear;
