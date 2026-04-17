@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className=' p-5 fixed left-0 right-0 top-0 shadow border-b-2 border-[#244d3f] bg-white z-50'>
           <div className='max-w-7xl mx-auto  flex justify-between items-center'>
             <div>
-          <Link to='/'><span className='bg-linear-to-r from-gray-700 to-[#244d3f] bg-clip-text text-transparent font-bold text-3xl'>KeenKeeper</span></Link>  
+          <Link to='/'><span className=' font-bold text-3xl bg-linear-to-r from-[#244d3f] via-[#278163] to-[#34ac84] bg-clip-text text-transparent'>KeenKeeper</span></Link>  
             </div>  
           <div className='hidden md:flex gap-3'>
             {links}
