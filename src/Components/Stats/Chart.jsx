@@ -10,9 +10,9 @@ import { GlobalContext } from '../../ContextApi/ContextApi';
 const Chart = () => {
   const {text,call,video}=useContext(GlobalContext)
  const data = [
-  { name: 'Text', value: text.length, fill: '#0088FE' },
-  { name: 'Call', value:call.length, fill: '#00C49F' },
-  { name: 'video', value:video.length, fill: '#FFBB28' }
+  { name: 'Text', value: text.length, fill: '#7E35E1' },
+  { name: 'Call', value:call.length, fill: '#244D3F' },
+  { name: 'video', value:video.length, fill: '#37A163' }
  
 ];
  
