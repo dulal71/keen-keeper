@@ -9,7 +9,7 @@ const Footer = () => {
   <div className='max-w-6xl mx-auto  flex flex-col items-center justify-center '>
    <div className='text-center '>
 <h2 className='font-semibold text-3xl md:text-5xl mb-3'><span className='font-bold'>Keen</span>Keeper</h2>
-    <p className="font-bold">
+    <p className="font-semibold text-xl">
      Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most. 
     </p>
    </div>
